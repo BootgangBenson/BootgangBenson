@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(0, 0, 0);
+    background-image:repeating-linear-gradient(90deg, rgb(0, 247, 255), #7e0eda);
+}
+
+.button {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 200px;
+    border-color: rgb(75, 0, 224);
+    font-family:cursive; font-size: 50px;
+    font-family:fantasy;
+}
+.Logo {
+    width: 315px;
+    height: 300px;
+   
+}
