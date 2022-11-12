@@ -1,0 +1,98 @@
+<!-- This HTML Was Created By Richard Lee Benson III 10/19/22-->
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="SpaceProgram.css">
+  <script src="Countdown_Function.js"></script>
+  <header>
+  <figure>
+    <!-- My image sourcing-->
+    <img src="Liftoff.jpg" alt="Logo" class="Logo" />
+  </figure>
+  </header>
+
+  <head>
+    <title>
+      MISSION CONTROL
+
+    </title>
+    <header>
+
+      <!-- current Time shown upon loading of html-->
+      <h2><span id="time_span"></span></h2>
+    </header>
+    <!--In-HTML javascript-->
+    <script type="text/javascript">
+      var currentTime = new Date()
+      var hours = currentTime.getHours()
+      var minutes = currentTime.getMinutes()
+      var seconds = currentTime.getSeconds()
+      var seconds = currentTime.getMilliseconds()
+      if (minutes < 10) {
+        minutes = "0" + minutes
+      }
+      var t_str = hours + ":" + minutes + " ";
+      if (hours > 11) {
+        t_str += "PM";
+      } else {
+        t_str += "AM";
+      }
+      document.getElementById('time_span').innerHTML = t_str;
+
+    </script>
+
+    </section>
+    <!-- font size becomes larger\/-->
+    <h6>
+      <!--Header-->
+      <font size="7">
+        Mission Control
+      </font>
+    </h6>
+    <h2>
+      First Name, Last Name, & Badge Number <br>
+      Required for Launch Verification
+    </h2>
+
+
+  </head>
+
+  <body>
+  
+  
+  <!--Name Text Fields and ID's for JS-->
+    First name:<br>
+    <input type="text" name="firstname" id='firstname'>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" id='lastname' min.length=3 max.length=20>
+    <br>
+    Badge Number:<br>
+    <input type="text" name="badgeNumb" id='badgeNumb' min.length=3 max.length=20>
+    <br>
+    <input type="button" value="Submit" onclick="myFunction()">
+    <div id="here">
+    </div>
+    <!-- My button to initiate the javascript function-->
+    <button id= "launch" onclick="start()" ; class="button">INITIATE LAUNCH</button>
+    <script>
+      document.getElementById("launch").disabled = true;
+    </script>
+
+    <!-- Where I identified I wanted the remainder of my countdown to be shown-->
+    <h1 div id="countdownTimer">
+      CLICK HERE TO BEGIN COUNTDOWN
+
+    </h1>
+    <!--Missile Launch Sound Audio-->
+    <audio controls>
+      <source src="blastoff.mp3"/>
+    </audio>\
+    <h2> Press Play to hear Missile Launch!!!</h2>
+
+
+
+
+
+  </body>
+
+</html>
