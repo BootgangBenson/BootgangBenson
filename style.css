@@ -97,7 +97,7 @@
   }
 
   input[type=text], select, textarea {    
-    width: 100%;    
+    width: 25%;    
     padding: 12px;    
     border: 1px solid rgb(70, 68, 68);    
     border-radius: 4px;    
@@ -120,7 +120,7 @@
     background-color: rgb(37, 116, 161);    
     color: white;    
     padding: 12px 20px;    
-    border: none;    
+    border-width: 400px;    
     border-radius: 4px;    
     cursor: pointer;    
     float: right;    
