@@ -50,39 +50,5 @@ myFunction = function()
    
   
   }
-  function sound(src)
-
-{
-
-this.sound = document.createElement(audio);
-
-this.sound.src = src;
-
- 
-
-this.play = function()
-
-{
-
-this.sound.play();
-
-}
-
-}
-if (i == ) 
-  
-{
-
-    this.newSound = new Audio("blastoff.mp3"); 
-
-    this.newSound.play(); 
-
-}
-  
-
-  
-   
-  
-  
   
    
