@@ -16,3 +16,7 @@ function redirect () {
     location.replace("bootgangbenson.github.io"); // back button move you to the landing page
 }
 
+function craps () {
+    location.replace("Craps.html");
+}
+
