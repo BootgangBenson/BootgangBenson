@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link for javascript-->
+    <script src="redirect.js"></script>
+    <title>Mission Control Landing Page</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+      <div class="header">
+        <h2>Welcome to Mission Controll</h2>
+        <br>
+        <br>
+      </div>
+      <!-- div is colum left -->
+      <div class="left">
+        <h1>Launch Initiation Page</h1>
+        <h3>Click to Login For Launch Verification</h3>
+        <!-- Launch Redirection -->
+      <img class="imgclick" id="uat" src="launch.jpg" onclick="launchPage()"/>
+    </div>
+    <!-- div for middle  -->
+      <div class="middle">
+        <h1>Click to redirect to Github Repository
+          <h3>(List of All Mission Control Files)</h3>
+        </h1>
+        <!-- Github Redirection-->
+        <img class="imgclick" id="uatspace" src="github.png" onclick="redirect()"/>
+      </div>  
+      <!-- div for right -->
+      <div class="right">
+        <h1>Click to Play Craps</h1>
+        <h3>Roll The Dice!</h3>
+        <!--Craps Section-->>
+        <img class="imgclick" id="feedback" src="craps.png" onclick="feedback()"/>
+      </div>
+      
+      <div class="footer">
+      <p></p>
+      </div>
+    </div>
+</body>
+</html>
